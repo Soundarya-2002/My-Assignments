@@ -74,6 +74,7 @@ public class DeplicatedLead{
     //check the current page visible is right by comparing
     String text1="View Lead | opentaps CRM";
     String text2=driver1.getTitle();
+    System.out.println(text);
     if(text1.equals(text2)) {
     	System.out.println("Matches");
     }
@@ -81,7 +82,7 @@ public class DeplicatedLead{
     	System.out.println("error");
     }
     	//to create duplicate account click duplicate account
-        driver1.findElement(By.className("subMenuButton")).click();
+        driver1.findElement(By.className("Duplicate Lead")).click();
         
         //clear the account using clear keyword
         driver1.findElement(By.id("createLeadForm_companyName")).clear();
