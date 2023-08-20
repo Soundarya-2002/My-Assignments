@@ -25,7 +25,7 @@ public class FindSecondLargestNum
 		System.out.println(num2);
 		
 		//print first largest number
-		System.out.println("SecondLargestNumber"+num2.get(num2.size()-2));
+		System.out.println("SecondLargestNumber= "+num2.get(num2.size()-2));
 		
 	}
 	
